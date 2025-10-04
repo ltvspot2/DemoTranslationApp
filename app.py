@@ -82,7 +82,7 @@ async def call_openai_gpt(session, prompt, semaphore):
         "X-Title": "EasyTranslate"                # Optional but helpful for tracking
     }
     payload = {
-        "model": "google/gemini-2.5-pro",  # Update below based on your chosen model
+        "model": "google/gemini-2.5-flash",  # Update below based on your chosen model
         "messages": [{"role": "user", "content": prompt}],
         "temperature": 0.1
     }
